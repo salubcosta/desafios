@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio HTML: Contato</title>
+</head>
+<body style="max-width: 500px; margin: 0 auto;">
+    <header>
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <hr style="border: 1px dotted #ccc;">
+    </header>
+    <main>
+        <form action="./obrigado.html" method="GET">
+            <div>
+                <label for="nome">Nome completo</label>
+                <input type="text" name="nome" id="nome" style="width: 100%; margin-bottom: 5px;">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" style="width: 100%; margin-bottom: 5px;">
+            </div>
+            <div>
+                <label>Gênero</label>
+                <div>
+                    <input type="radio" name="gender" id="gender" value="male">
+                    <label for="gender">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="gender" value="female">
+                    <label for="gender">Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="gender" value="other">
+                    <label for="gender">Outro</label>
+                </div>
+            </div>
+            <div>
+                <label>Quais serviços você quer contratar?</label>
+                <div>
+                    <input type="checkbox" name="servicos" id="servicos" value="landing">
+                    <label for="servicos">Criação de landing page</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="servicos" id="servicos" value="sistema">
+                    <label for="servicos">Desenvolvimento de Sistema web</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="servicos" id="servicos" value="api">
+                    <label for="servicos">Criação de API Rest</label>
+                </div>
+            </div>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <div>
+                    <textarea name="mensagem" id="mensagem" rows="5" cols="50"></textarea>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Finalizar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>
